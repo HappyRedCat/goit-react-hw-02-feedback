@@ -1,20 +1,7 @@
 import styled from 'styled-components';
 
-const GetBorderColor = props => {
-  switch (props.option) {
-    case 'good':
-      return props.theme.colors.good;
-    case 'neutral':
-      return props.theme.colors.neutral;
-    case 'bad':
-      return props.theme.colors.bad;
-    default:
-      return '#201e20';
-  }
-};
-
 export const List = styled.ul`
-  margin: 0;
+  margin: 10;
   padding: 0;
   list-style: none;
   display: flex;
@@ -32,14 +19,11 @@ export const BtnList = styled.button`
   font-size: 18px;
   border: transparent;
   border-radius: 2px;
-  background-color: ${p => p.theme.colors.button};
-  box-shadow: 3px 3px 3px ${GetBorderColor};
 `;
 
 export const ListItem = styled.li`
   :hover,
   focus {
-    background-color: ${GetBorderColor};
-    box-shadow: 3px 3px 3px ${p => p.theme.colors.button};
+    background-color: red;
   }
 `;

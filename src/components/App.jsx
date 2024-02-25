@@ -28,9 +28,7 @@ export class App extends Component {
       <div>
         <Section title="Please leave feedback">
           <Feedback
-            // onIncreamentGood={this.handleIncreament}
-            // onIncreamentNeutral={this.handleIncreament}
-            // onIncreamentBad={this.handleIncreament}
+
             options={Object.keys(this.state)}
             onLeaveFeedback={this.handleIncreament}
           />
