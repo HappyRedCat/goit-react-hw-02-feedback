@@ -4,6 +4,7 @@ export const SectionFeedback = styled.section`
   background-color: ${p => p.theme.colors.main};
   width: 372px;
   margin-top: 10px;
+  margin-left: 20px;
   padding: 20px;
   border-radius: 4px;
   box-shadow: 2px 3px 7px ${p => p.theme.colors.button};
